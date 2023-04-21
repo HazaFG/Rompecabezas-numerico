@@ -1,8 +1,6 @@
 import java.awt.EventQueue;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -28,7 +26,7 @@ public class Ventana extends JFrame {
     private String textoGuardado;
     Random rand =  new Random();
 
-    private int textito;
+    private int identificador;
     private JLabel lblTiempo;
     private JLabel lblTiempo_1;
 
@@ -77,8 +75,8 @@ public class Ventana extends JFrame {
 
         btnUno.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                textito = 1;
-                System.out.println(textito);
+                identificador = 1;
+                System.out.println(identificador);
             }
         });
         panel.add(btnUno);
@@ -89,15 +87,15 @@ public class Ventana extends JFrame {
                 if(btnUno.getText() == " ") {
                     System.out.println("Esta vacio");
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 5:
-                            System.out.println("El 5 funciono: "+textito);
+                            System.out.println("El 5 funciono: "+ identificador);
                             btnCinco.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnUno.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (12)
                             break;
                         case 2:
-                            System.out.println("El 2 funciono: "+textito);
+                            System.out.println("El 2 funciono: "+ identificador);
                             btnDos.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnUno.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
@@ -106,9 +104,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 1;
+                    identificador = 1;
                     textoGuardado = btnUno.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -127,21 +125,21 @@ public class Ventana extends JFrame {
                 if(btnDos.getText() == " ") {
                     System.out.println("Esta vacio");
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 1:
-                            System.out.println("El 1 funciono: "+textito);
+                            System.out.println("El 1 funciono: "+ identificador);
                             btnUno.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnDos.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (12)
                             break;
                         case 6:
-                            System.out.println("El 6 funciono: "+textito);
+                            System.out.println("El 6 funciono: "+ identificador);
                             btnSeis.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnDos.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 3:
-                            System.out.println("El 3 funciono: "+textito);
+                            System.out.println("El 3 funciono: "+ identificador);
                             btnTres.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnDos.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
@@ -153,9 +151,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 2;
+                    identificador = 2;
                     textoGuardado = btnDos.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -175,21 +173,21 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 2:
-                            System.out.println("El 2 funciono: "+textito);
+                            System.out.println("El 2 funciono: "+ identificador);
                             btnDos.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnTres.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (12)
                             break;
                         case 7:
-                            System.out.println("El 7 funciono: "+textito);
+                            System.out.println("El 7 funciono: "+ identificador);
                             btnSiete.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnTres.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 4:
-                            System.out.println("El 4 funciono: "+textito);
+                            System.out.println("El 4 funciono: "+ identificador);
                             btnCuatro.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnTres.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
@@ -201,9 +199,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 3;
+                    identificador = 3;
                     textoGuardado = btnTres.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -222,15 +220,15 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 3:
-                            System.out.println("El 3 funciono: "+textito);
+                            System.out.println("El 3 funciono: "+ identificador);
                             btnTres.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnCuatro.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (12)
                             break;
                         case 8:
-                            System.out.println("El 8 funciono: "+textito);
+                            System.out.println("El 8 funciono: "+ identificador);
                             btnOcho.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnCuatro.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
@@ -242,9 +240,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 4;
+                    identificador = 4;
                     textoGuardado = btnCuatro.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -263,19 +261,19 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 1:
-                            System.out.println("El 10 funciono: "+textito);
+                            System.out.println("El 10 funciono: "+ identificador);
                             btnUno.setText(" ");//AQUI VA EL SWITCH
                             btnCinco.setText(textoGuardado); //BOTON BTN (INSERTE NUMERO)
                             break;
                         case 6:
-                            System.out.println("El 6 funciono: "+textito);
+                            System.out.println("El 6 funciono: "+ identificador);
                             btnSeis.setText(" "); //AQUI VA EL SWITCH
                             btnCinco.setText(textoGuardado); //BOTON BTN (INSERTE NUMERO)
                             break;
                         case 9:
-                            System.out.println("El 5 funciono: "+textito);
+                            System.out.println("El 5 funciono: "+ identificador);
                             btnNueve.setText(" ");//AQUI VA EL SWITCH
                             btnCinco.setText(textoGuardado); //BOTON BTN (INSERTE NUMERO)
                             break;
@@ -285,9 +283,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 5;
+                    identificador = 5;
                     textoGuardado = btnCinco.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -306,25 +304,25 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 2:
-                            System.out.println("El 2 funciono: "+textito);
+                            System.out.println("El 2 funciono: "+ identificador);
                             btnDos.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNONCE, ES EL DEL BOTON)
                             btnSeis.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (12)
                             break;
                         case 5:
-                            System.out.println("El 5 funciono: "+textito);
+                            System.out.println("El 5 funciono: "+ identificador);
                             btnCinco.setText(" ");
                             btnSeis.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 7:
-                            System.out.println("El 7 funciono: "+textito);
+                            System.out.println("El 7 funciono: "+ identificador);
                             btnSiete.setText(" ");
                             btnSeis.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 10:
-                            System.out.println("El 10 funciono: "+textito);
+                            System.out.println("El 10 funciono: "+ identificador);
                             btnDiez.setText(" ");
                             btnSeis.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
@@ -334,9 +332,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 6;
+                    identificador = 6;
                     textoGuardado = btnSeis.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -356,25 +354,25 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 8:
-                            System.out.println("El 12 funciono: "+textito);
+                            System.out.println("El 12 funciono: "+ identificador);
                             btnOcho.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNONCE, ES EL DEL BOTON)
                             btnSiete.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (12)
                             break;
                         case 11:
-                            System.out.println("El 11 funciono: "+textito);
+                            System.out.println("El 11 funciono: "+ identificador);
                             btnOnce.setText(" ");
                             btnSiete.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 6:
-                            System.out.println("El 7 funciono: "+textito);
+                            System.out.println("El 7 funciono: "+ identificador);
                             btnSeis.setText(" ");
                             btnSiete.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 3:
-                            System.out.println("El 7 funciono: "+textito);
+                            System.out.println("El 7 funciono: "+ identificador);
                             btnTres.setText(" ");
                             btnSiete.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
@@ -385,9 +383,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 7;
+                    identificador = 7;
                     textoGuardado = btnSiete.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -407,21 +405,21 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 12:
-                            System.out.println("El 12 funciono: "+textito);
+                            System.out.println("El 12 funciono: "+ identificador);
                             btnDoce.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnOcho.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (12)
                             break;
                         case 7:
-                            System.out.println("El 7 funciono: "+textito);
+                            System.out.println("El 7 funciono: "+ identificador);
                             btnSiete.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnOcho.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 4:
-                            System.out.println("El 4 funciono: "+textito);
+                            System.out.println("El 4 funciono: "+ identificador);
                             btnCuatro.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnOcho.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
@@ -433,9 +431,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 8;
+                    identificador = 8;
                     textoGuardado = btnOcho.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -453,19 +451,19 @@ public class Ventana extends JFrame {
                 if(btnNueve.getText() == " ") {
                     System.out.println("Esta vacio");
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 10:
-                            System.out.println("El 10 funciono: "+textito);
+                            System.out.println("El 10 funciono: "+ identificador);
                             btnDiez.setText(" ");//AQUI VA EL SWITCH
                             btnNueve.setText(textoGuardado); //BOTON BTN (INSERTE NUMERO)
                             break;
                         case 13:
-                            System.out.println("El 13 funciono: "+textito);
+                            System.out.println("El 13 funciono: "+ identificador);
                             btnTrece.setText(" "); //AQUI VA EL SWITCH
                             btnNueve.setText(textoGuardado); //BOTON BTN (INSERTE NUMERO)
                             break;
                         case 5:
-                            System.out.println("El 5 funciono: "+textito);
+                            System.out.println("El 5 funciono: "+ identificador);
                             btnCinco.setText(" ");//AQUI VA EL SWITCH
                             btnNueve.setText(textoGuardado); //BOTON BTN (INSERTE NUMERO)
                             break;
@@ -473,9 +471,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 9;
+                    identificador = 9;
                     textoGuardado = btnNueve.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -494,24 +492,24 @@ public class Ventana extends JFrame {
                 if(btnDiez.getText() == " ") {
                     System.out.println("Esta vacio");
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 11:
-                            System.out.println("El 11 funciono: "+textito);
+                            System.out.println("El 11 funciono: "+ identificador);
                             btnOnce.setText(" ");
                             btnDiez.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (11)
                             break;
                         case 14:
-                            System.out.println("El 11 funciono: "+textito);
+                            System.out.println("El 11 funciono: "+ identificador);
                             btnCatorce.setText(" ");
                             btnDiez.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (14)
                             break;
                         case 6:
-                            System.out.println("El 11 funciono: "+textito);
+                            System.out.println("El 11 funciono: "+ identificador);
                             btnSeis.setText(" ");
                             btnDiez.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (11)
                             break;
                         case 9:
-                            System.out.println("El 11 funciono: "+textito);
+                            System.out.println("El 11 funciono: "+ identificador);
                             btnNueve.setText(" ");
                             btnDiez.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (14)
                             break;
@@ -520,9 +518,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 10;
+                    identificador = 10;
                     textoGuardado = btnDiez.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
 
@@ -543,25 +541,25 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 12:
-                            System.out.println("El 12 funciono: "+textito);
+                            System.out.println("El 12 funciono: "+ identificador);
                             btnDoce.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNONCE, ES EL DEL BOTON)
                             btnOnce.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (12)
                             break;
                         case 15:
-                            System.out.println("El 11 funciono: "+textito);
+                            System.out.println("El 11 funciono: "+ identificador);
                             btnQuince.setText(" ");
                             btnOnce.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 7:
-                            System.out.println("El 7 funciono: "+textito);
+                            System.out.println("El 7 funciono: "+ identificador);
                             btnSiete.setText(" ");
                             btnOnce.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 10:
-                            System.out.println("El 7 funciono: "+textito);
+                            System.out.println("El 7 funciono: "+ identificador);
                             btnDiez.setText(" ");
                             btnOnce.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
@@ -571,9 +569,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 11;
+                    identificador = 11;
                     textoGuardado = btnOnce.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -592,21 +590,21 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 16:
-                            System.out.println("El 16 funciono: "+textito);
+                            System.out.println("El 16 funciono: "+ identificador);
                             btnDiezYSeis.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnDoce.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (16)
                             break;
                         case 11:
-                            System.out.println("El 11 funciono: "+textito);
+                            System.out.println("El 11 funciono: "+ identificador);
                             btnOnce.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnDoce.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 8:
-                            System.out.println("El 8 funciono: "+textito);
+                            System.out.println("El 8 funciono: "+ identificador);
                             btnOcho.setText(" ");
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
                             btnDoce.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
@@ -617,9 +615,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 12;
+                    identificador = 12;
                     textoGuardado = btnDoce.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -638,9 +636,9 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 14:
-                            System.out.println("El 14 funciono: "+textito);
+                            System.out.println("El 14 funciono: "+ identificador);
                             btnCatorce.setText(" ");
 
                             //RECUERDA QUE ESTE SIEMPRE (BTNTRECE, ES EL DEL BOTON)
@@ -648,7 +646,7 @@ public class Ventana extends JFrame {
                             break;
 
                         case 9:
-                            System.out.println("El 9 funciono: "+textito);
+                            System.out.println("El 9 funciono: "+ identificador);
                             btnNueve.setText(" ");
                             btnTrece.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (10)
                             break;
@@ -659,9 +657,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 13;
+                    identificador = 13;
                     textoGuardado = btnTrece.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -680,21 +678,21 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 15:
-                            System.out.println("El 15 funciono: "+textito);
+                            System.out.println("El 15 funciono: "+ identificador);
                             btnQuince.setText(" ");
 
                             //RECUERDA QUE ESTE SIEMPRE (BTNCATORCE, ES EL DEL BOTON)
                             btnCatorce.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 10:
-                            System.out.println("El 11 funciono: "+textito);
+                            System.out.println("El 11 funciono: "+ identificador);
                             btnDiez.setText(" ");
                             btnCatorce.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (10)
                             break;
                         case 13:
-                            System.out.println("El 13 funciono: "+textito);
+                            System.out.println("El 13 funciono: "+ identificador);
                             btnTrece.setText(" ");
                             btnCatorce.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (10)
                             break;
@@ -705,9 +703,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 14;
+                    identificador = 14;
                     textoGuardado = btnCatorce.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
 
@@ -727,19 +725,19 @@ public class Ventana extends JFrame {
                     System.out.println("Esta vacio");
 
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 16:
-                            System.out.println("El 16 funciono: "+textito);
+                            System.out.println("El 16 funciono: "+ identificador);
                             btnDiezYSeis.setText(" ");
                             btnQuince.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (16)
                             break;
                         case 11:
-                            System.out.println("El 11 funciono: "+textito);
+                            System.out.println("El 11 funciono: "+ identificador);
                             btnOnce.setText(" ");
                             btnQuince.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (11)
                             break;
                         case 14:
-                            System.out.println("El 14 funciono: "+textito);
+                            System.out.println("El 14 funciono: "+ identificador);
                             btnCatorce.setText(" ");
                             btnQuince.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (14)
                             break;
@@ -749,9 +747,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAR DATOS
                     System.out.println("Si tiene numero");
-                    textito = 15;
+                    identificador = 15;
                     textoGuardado = btnQuince.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
 
@@ -810,14 +808,14 @@ public class Ventana extends JFrame {
                 if(btnDiezYSeis.getText() == " ") {
                     System.out.println("Esta vacio");
 
-                    switch(textito) {
+                    switch(identificador) {
                         case 15:
-                            System.out.println("El 15 funciono: "+textito);
+                            System.out.println("El 15 funciono: "+ identificador);
                             btnQuince.setText(" ");
                             btnDiezYSeis.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (15)
                             break;
                         case 12:
-                            System.out.println("El 12 funciono: "+textito);
+                            System.out.println("El 12 funciono: "+ identificador);
                             btnDoce.setText(" ");
                             btnDiezYSeis.setText(textoGuardado); //RECIBIMOS EL NUMERO DEL BOTON PRESIONADO == (12)
                             break;
@@ -825,9 +823,9 @@ public class Ventana extends JFrame {
                 }else {
                     //ENVIAMOS DATOS
                     System.out.println("Si tiene numero");
-                    textito = 16;
+                    identificador = 16;
                     textoGuardado = btnDiezYSeis.getText();
-                    System.out.println(textito);
+                    System.out.println(identificador);
                     System.out.println(textoGuardado);
                 }
             }
@@ -843,7 +841,7 @@ public class Ventana extends JFrame {
     }
 
     public void cambiar() {
-        if(textito == 1) {
+        if(identificador == 1) {
             btnUno.setText(" ");
         }
 
