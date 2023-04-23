@@ -38,7 +38,7 @@ public class Splash extends JDialog {
         barra = new JProgressBar();
         barra.setBounds(230,424,294,22);
         barra.setOpaque(true);
-        barra.setForeground(Color.decode("#3E4532"));
+        barra.setForeground(new Color(190, 162, 187));
         getContentPane().add(barra);
 
         porcentaje = new JLabel("0%");
