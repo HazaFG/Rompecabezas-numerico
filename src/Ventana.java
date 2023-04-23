@@ -37,8 +37,13 @@ public class Ventana extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
+                    Splash splash = new Splash();
+                    splash.setVisible(true);
+                    /*
                     Ventana frame = new Ventana();
                     frame.setVisible(true);
+                    */
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
